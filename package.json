@@ -2,9 +2,8 @@
   "name": "forweather",
   "version": "1.0.0",
   "description": "Weather forecast application with push notifications",
-  "main": "main.js",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
