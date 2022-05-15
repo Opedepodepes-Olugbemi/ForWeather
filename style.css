@@ -10,42 +10,94 @@
 /* ==========================================
     production styles
   ========================================== */
+
 body {
-  background: #2a2e32;
+	font-family: 'PT Sans Caption',"Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	font-size: 3vh;
+}
+#header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.text-small {
-  font-size: 0.9rem;
-}
-
-a {
-  color: inherit;
+#logo {
   text-decoration: none;
-  transition: all 0.3s;
+  color: white;
+  font-size: 5vh;
+  font-weight: bold;
+}
+	
+#menu-icon {
+  font-family: Geneva, sans-serif;
+  font-size: 6vh;
 }
 
-a:hover, a:focus {
-  text-decoration: none;
+.hero {
+  width: fit-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+	padding: 1em;
+	box-sizing: border-box;
+	color: white;
+	background: url(https://images.unsplash.com/photo-1500417148159-68083bd7333a) center center no-repeat;
+	background-size: cover;
 }
 
-.form-control {
-  background: #212529;
-  border-color: #545454;
+.hero-title {
+	max-width: 16em;
+	margin: 5;
+	font-size: 12vh;
+	font-weight: bold;
+	line-height: .9;
+	word-wrap: normal;
+}
+	
+	@media only screen and (min-width: 32em) { 
+	  .hero-title { 
+	    font-size: 16vh; }
+	  }	
+
+.hero-footer {
+	display: flex;
+	margin-bottom: 1em;
 }
 
-.form-control:focus {
-  background: #212529;
+.button {
+  font-size: 18px;
+	padding: .5em .67em;
+	color: white;
+	text-decoration: none;
+	border: .1em solid white;
+
 }
+	
+	.button-primary {
+		color: black;
+		background-color: white;
+		outline: none;
+		font-size: 18px;
+	}
+	
 
-footer {
-  background: #212529;
-}
+article {
+	max-width: 36em;
+	margin: 0 auto;
+	padding: 1em;
+}	
 
-
-/* ==========================================
-    CUSTOM UTILS CLASSES
-  ========================================== */
-  body, html {
+body, html {
     height: 100%;
     scroll-behavior: smooth;
   }
+
+@media(min-width: 769px){
+  .button-primary{
+    font-size: 40px;
+  }
+.button {
+  font-size: 18px;
+}
+}
